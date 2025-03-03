@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/os/Desktop/master/robot/DQN_Move_Object/mlruns/0/3e4427031e1142b8b06a0c0835446fe2/artifacts
+deleted_time: 1740687461942
+end_time: 1740687422199
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 3e4427031e1142b8b06a0c0835446fe2
+run_name: '0001'
+run_uuid: 3e4427031e1142b8b06a0c0835446fe2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740687419267
+status: 3
+tags: []
+user_id: os

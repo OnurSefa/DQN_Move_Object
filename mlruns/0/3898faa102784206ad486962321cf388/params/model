@@ -1,0 +1,21 @@
+DQN(
+  (state_encoder): Sequential(
+    (0): Linear(in_features=6, out_features=128, bias=True)
+    (1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (2): ReLU()
+    (3): Linear(in_features=128, out_features=128, bias=True)
+    (4): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (5): ReLU()
+  )
+  (advantage): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=128, out_features=8, bias=True)
+  )
+  (value): Sequential(
+    (0): Linear(in_features=128, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=128, out_features=1, bias=True)
+  )
+  (relu): ReLU()
+)
