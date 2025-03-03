@@ -210,7 +210,7 @@ def train(name):
     plt.close()
 
 
-def evaluate(model_path="hw2_2.pth", experiment_count=1, prediction_epsilon=0.05):
+def test(model_path="hw2_2.pth", experiment_count=1, prediction_epsilon=0.05):
 
     os.makedirs('evaluation', exist_ok=True)
 
@@ -275,4 +275,4 @@ def evaluate(model_path="hw2_2.pth", experiment_count=1, prediction_epsilon=0.05
 
 if __name__ == '__main__':
     # train('2_0001')
-    evaluate(experiment_count=5)
+    test(experiment_count=5)

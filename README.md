@@ -5,7 +5,7 @@ is in the `hw2_1.py` file and the second part, with minimal architectural change
 `train` functions are used to train the DQN model structure with the given hyper parameter sets. It saves the checkpoints after each
 500 episodes and after each episode, it saves the model metrics to the mlflow environment. You can run the `mlflow ui` command to run
 the ui in the localhost to get momentary changes. It also saves the pyplot graphs to the `visuals` directory. I manually selected
-the best model from best runs according to their rps and total reward values. The `evaluate` functions create experimental runs and
+the best model from best runs according to their rps and total reward values. The `test` functions create experimental runs and
 record the rps and total reward values as bar plots into the `evaluation` directory. It also runs the environment in `gui` mode
 to better visualization and understanding of the behaviour of the trained models.
 
@@ -38,7 +38,7 @@ The graphs below show the rps actual and smoothened values for each episodes. It
 ![](plots/1_rps_smooth.png)
 
 
-After running the `evaluate` function with the `hw2_1.pth` trained model parameter file, I made 5 experimental episodes. Each episode showed
+After running the `test` function with the `hw2_1.pth` trained model parameter file, I made 5 experimental episodes. Each episode showed
 very similar behaviours. Even though the total reward gained from the experiment 1 seems very low, when we see regarding rps value, we can see that
 each run results with similar reward values. 
 
@@ -84,7 +84,7 @@ parallel behaviours with the accumulated reward graphs. I used 100 maximum steps
 ![](plots/2_rps_smooth.png)
 
 
-The `evaluate` function takes the selected model parameters and makes the next action predictions according to the expected
+The `test` function takes the selected model parameters and makes the next action predictions according to the expected
 rewards from the possible actions. With the most probable action (or random action with epsilon=0.05), takes the next state
 and continues to iterate in the simulation environment. It saves gathered reward and rps graphs into the `evaluation` directory.
 
